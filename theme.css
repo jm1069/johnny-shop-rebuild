@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box!important;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+    /* outline: 1px solid red; */
+    /* font-family: 'Montserrat', sans-serif;           800 Extra Bold = Überschriften
+    font-family: 'Work Sans', sans-serif;            400 Regular = Normaler Text       */
+}
+
+/* -------------------------- */
+/* NAV */
+nav{
+    border-bottom: 1px solid #d9d9d9;
+    padding: 0px 106px;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 106px;
+    padding: 0px 40px;
+}
+
+/* NAV LOGO */
+.nav-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-logo img{
+    width: 125px;
+}
+
+/* NAV LINKS */
+.nav-ul-links{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-ul-links a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    position: relative;
+}
+
+/* hover animation from https://www.30secondsofcode.org/css/s/hover-underline-animation */
+.nav-ul-links a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.nav-ul-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* NAV ACTIONS */
+.nav-actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-actions a{
+    color: black;
+    font-size: 20px;
+}
+
+.nav-actions button{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: black;
+    font-size: 20px;
+}
+
+.notify-bubble {
+    font-family: 'Work Sans', sans-serif;
+    position: absolute;
+    right: 135px;
+    top: 30px;
+    padding: 4px 8px 4px 8px;
+    background-color: black;
+    color: white;
+    font-size: 0.65em;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px gray;
+}
+
+/* --------------------------- */
+/* MAIN */
+main{
+    padding: 0 146px;
+}
+
+.breadcrump-nav{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 30px 0;
+}
+
+.product-wrapper{
+    display: flex;
+    padding: 0px 120px;
+}
+
+.product-image-slider{
+    width: 68px;
+    height: 600px;
+    margin: 0 5px;
+    background-color: yellow;
+}
+
+.product-image img{
+    width: 600px;
+    margin-right: 50px;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+}
