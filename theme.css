@@ -10,6 +10,22 @@
     font-family: 'Work Sans', sans-serif;            400 Regular = Normaler Text       */
 }
 
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+}
+
+p{
+    font-family: 'Work Sans', sans-serif;
+}
+
 /* -------------------------- */
 /* NAV */
 nav{
@@ -124,14 +140,8 @@ main{
 
 .product-wrapper{
     display: flex;
-    padding: 0px 120px;
-}
-
-.product-image-slider{
-    width: 68px;
-    height: 600px;
-    margin: 0 5px;
-    background-color: yellow;
+    margin: 0 120px;
+    gap: 30px;
 }
 
 .product-image img{
@@ -139,8 +149,41 @@ main{
     margin-right: 50px;
 }
 
-h2{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 32px;
+.price-style{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.star-rating{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.star-rating i{
+    color: #ffdc0f;
+    cursor: pointer;
+}
+
+.product-details img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.add-to-cart{
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #f77f00;
+    padding: 15px;
+}
+
+.add-to-cart:hover{
+    cursor: pointer;
+    background-color: #ff992d;
 }
